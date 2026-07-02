@@ -1,10 +1,14 @@
 ## By using while loop 
-num=int(input("Enter any number: "))
+num = int(input("Enter a number: "))
 
-factorial = 1
-i = 1
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    factorial = 1
+    i = 1
 
-while i <= num:
-    factorial = factorial * i
-    i += 1
-print("Factorial =",factorial)
+    while i <= num:
+        factorial *= i
+        i += 1
+
+    print("Factorial =", factorial)
