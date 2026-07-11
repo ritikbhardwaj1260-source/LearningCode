@@ -9,7 +9,7 @@ public class Fibonacci {
         Scanner s = new Scanner(System.in);
 
         int n = 0;
-
+    try{
         while (true) {
 
             System.out.print("Enter the number of terms: ");
@@ -21,12 +21,14 @@ public class Fibonacci {
                 System.out.println("Please enter a valid number.");
             }
         }
-
+    
         printFibonacci(n);
-
-        s.close();
     }
-
+    finally {
+        s.close();
+        System.out.println("Scanner Closed");
+    }
+}
     public static void printFibonacci(int n) {
 
         int num1 = 0;
